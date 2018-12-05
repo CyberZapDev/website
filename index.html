@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fortnite Coaching</title>
+        <link href="css/stillanding.css" type="text/css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".container img").animate({
+                    border: "50%"
+                }, 5000, function() {
+                    $(".container img").addClass("shadow");
+                    $(".container h1").fadeIn(2000, function() {
+                        $(".container h1").animate({
+                            bottom: "15%"
+                        }, 2000, function() {
+                            window.location.href = "/home.html";
+                        });
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="image">
+                <img src="images/loader.png" alt="Fortnite loader">
+                <h1>Fortnite Coach</h1>
+            </div>
+        </div>
+    </body>
+</html>

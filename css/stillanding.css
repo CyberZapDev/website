@@ -1,0 +1,70 @@
+@font-face {
+    font-family: Caviar;
+    src: url("../fonts/CaviarDreams.ttf");
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: 0px 0px 0px white;
+    }
+    
+    100% {
+        transform: rotate(720deg);
+        box-shadow: 0px 0px 300px white;
+    }
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+/* Removes 00webhosting branding */
+a[title="Hosted on free web hosting 000webhost.com. Host your own website for FREE."] {
+    display: none;
+}
+
+.container {
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: darkred;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    animation-name: loader;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.container .image {
+    color: white;
+}
+
+.container .image h1 {
+    display: none;
+    font-family: Caviar;
+    margin: 0px;
+    font-size: 70px;
+    text-align: center;
+    left: 25%;
+    right: 25%;
+    bottom: 15%;
+    position: absolute;
+}
+
+.shadow {
+    box-shadow: 0px 0px 300px white;
+}
+
+@media screen and (max-width: 1000px) {
+    .container .image h1 {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,322 @@
+::selection {
+    background-color: darkred;
+    color: white;
+}
+
+@font-face {
+    font-family: Fortnite;
+    src: url("../fonts/BurbankBigCondensed-Bold.otf");
+}
+
+@font-face {
+    font-family: Caviar;
+    src: url("../fonts/CaviarDreams.ttf");
+}
+
+@keyframes header {
+    0% {
+        background-image: url("../images/1.png");
+    }
+    
+    25% {
+        background-image: url("../images/2.png");
+    }
+    
+    50% {
+        background-image: url("../images/3.png");
+    }
+    
+    75% {
+        background-image: url("../images/4.png");
+    }
+    
+    100% {
+        background-image: url("../images/1.png");
+    }
+}
+
+@keyframes discord {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    25% {
+        transform: rotate(30deg);
+    }
+    
+    50% {
+        transform: rotate(0deg);
+    }
+    
+    75% {
+        transform: rotate(-30deg);
+    }
+    
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+body, html {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+/* Removes 00webhosting branding */
+a[title="Hosted on free web hosting 000webhost.com. Host your own website for FREE."] {
+    display: none;
+}
+
+.container {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.container nav {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    background-color: rgba(124,0,12, 0.8);
+    text-align: center;
+}
+
+.container nav a {
+    display: inline-block;
+    padding: 20px 40px;
+    color: white;
+    text-decoration: none;
+    font-family: Fortnite;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.container nav a:hover {
+    background-color: white;
+    color: darkred;
+}
+
+.container nav img {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    width: 40px;
+}
+
+.container nav img:hover {
+    animation-name: discord;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+}
+
+.container header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    animation-name: header;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.container header h1 {
+    margin: 0px;
+    font-size: 150px;
+    font-family: Fortnite;
+    color: white;
+}
+
+.container header a {
+    position: absolute;
+    bottom: 30px;
+    padding: 30px;
+    background-image: url("../images/downarrow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.container header a:hover {
+    transform: scale(1.3);
+}
+
+.container .whatwillyoulearn {
+    margin: 0px;
+    position: relative;
+    padding: 20px 0px;
+    text-align: center;
+    background-color: darkred;
+    color: white;
+}
+
+.container .whatwillyoulearn .whatwillyoulearnbox {
+    display: inline-block;
+    width: 20%;
+    margin: 0px 50px;
+}
+
+.container .whatwillyoulearn .whatwillyoulearnbox:nth-of-type(1) {
+    position: absolute;
+    left: 0%;
+}
+
+.container .whatwillyoulearn .whatwillyoulearnbox:nth-of-type(2) {
+    position: static;
+    display: inline-block;
+}
+
+.container .whatwillyoulearn .whatwillyoulearnbox:nth-of-type(3) {
+    position: absolute;
+    right: 0%;
+}
+
+.container .whatwillyoulearn .whatwillyoulearnbox h1 {
+    left: 25%;
+    right: 25%;
+    font-family: Fortnite;
+    letter-spacing: 1px;
+}
+
+.container .whatwillyoulearn .whatwillyoulearnbox p {
+    font-family: Caviar;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.container .tips {
+    background-color: darkred;
+    column-count: 3;
+    text-align: center;
+}
+
+.container .tips h1 {
+    margin: 0px;
+    padding: 80px 0px;
+    font-family: Fortnite;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: 50px;
+    column-span: all;
+    margin-bottom: 50px;
+}
+
+.container .tips a {
+    display: inline-block;
+    margin: 0px;
+    font-family: Caviar;
+    font-size: 25px;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.container .tips a:last-of-type {
+    margin-bottom: 50px;
+}
+
+.container .tips a:hover hr {
+    width: 100%;
+}
+
+.container .tips a hr {
+    width: 0%;
+    border: 0px;
+    height: 3px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.container .tips span {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.container .discord {
+    text-align: center;
+    background-image: url("../images/discordbackground.png");
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 120px 0px;
+}
+
+.container .discord h1 {
+    font-family: Fortnite;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.container .discord a {
+    font-family: Fortnite;
+    color: white;
+    border: 3px solid white;
+    padding: 20px 80px;
+    font-size: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.container .discord a:hover {
+    color: darkred;
+    background-color: white;
+}
+
+.container footer {
+    font-family: Caviar;
+    background-color: darkred;
+    padding: 20px 0px 10px 0px;
+}
+
+.container footer .links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container footer .links a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 0px 40px;
+}
+
+.container footer .links a hr {
+    border: 0px;
+    height: 3px;
+    background-color: white;
+    width: 0%;
+    transition: 0.5s;
+}
+
+.container footer .links a:hover hr {
+    width: 100%;
+}
+
+.container footer .last {
+    text-align: center;
+}
+
+.container footer .last p {
+    margin: 0px;
+    padding: 3px 0px;
+    color: white;
+}
+
+.container footer .last p:last-of-type {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    
+}
